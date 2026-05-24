@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: #faf5ec;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* position: sticky;
+  top: 10px; */
+
+  z-index: 10;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+li a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.search {
+  padding: 5px 10px;
+  background-color: rgba(248, 245, 246, 0.932);
+  border: 1px solid lightgray;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.search p {
+  font-size: 10px;
+}
+
+.search .line {
+  height: 10px;
+  width: 1px;
+  background-color: black;
+}
+
+.search .ri-search-line {
+  color: red;
+}
+
+.top-section {
+  height: 100%;
+  width: 100%;
+
+  top: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 15vh 0px;
+}
+
+.left {
+  width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left .box1 {
+  padding: 5px 10px;
+  border: 1px solid green;
+  background-color: rgb(223, 247, 223);
+  color: green;
+  border-radius: 50px;
+  text-align: center;
+
+  width: 160px;
+  font-size: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.left h1 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.left h1 span {
+  color: green;
+}
+
+.left img {
+  width: 50%;
+  margin-top: -30px;
+  margin-left: -10px;
+}
+
+.left p {
+  font-size: 1em;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons .add-to-cart {
+  padding: 10px;
+
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: none;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-to-cart i {
+  padding: 2px;
+  border-radius: 50%;
+  color: black;
+  background-color: rgb(245, 180, 15);
+  border: 1px solid goldenrod;
+}
+
+.buttons .quantity {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 30px;
+
+  font-size: 15px;
+  text-align: center;
+
+  background-color: white;
+  color: green;
+
+  display: flex;
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+.quantity span {
+  color: red;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.features .cards {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cards i {
+  border-radius: 50%;
+  padding: 3px;
+}
+.features .ri-leaf-fill {
+  border: 1px solid green;
+  color: green;
+}
+
+.text {
+  font-size: 10px;
+}
+
+.features .ri-fire-fill {
+  border: 1px solid rgb(252, 159, 20);
+  color: rgb(252, 159, 20);
+}
+
+.features .ri-poker-hearts-fill {
+  border: 1px solid red;
+  color: red;
+}
+
+.center {
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.circle {
+  width: 80vw;
+  height: 70vh;
+  background-color: rgba(230, 223, 223, 0.897);
+  border-radius: 50%;
+
+  transform: rotate(-30deg);
+}
+
+.center img {
+  width: 50vw;
+  max-width: 500px;
+  position: absolute;
+}
+
+.right {
+  width: 20%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.right .info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.info h5,
+.info h6 {
+  font-weight: 500;
+}
+.info i {
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.info .ri-temp-hot-line {
+  background-color: green;
+  color: red;
+}
+
+.info .ri-bread-fill {
+  background-color: rgb(240, 174, 174);
+  color: darkred;
+}
+
+.info .ri-fire-fill {
+  background-color: rgb(248, 213, 148);
+  color: rgb(247, 77, 77);
+}
+
+.bottom-section {
+  background-color: green;
+  border-radius: 50px;
+  padding: 20px 20px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-section .icons {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.bottom-section .icons i {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.products .box {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  width: 90px;
+  transform: translateX(15px);
+}
+
+.products .detail {
+  background-color: white;
+  font-size: 0.6em;
+  padding: 15px;
+}
+
+.detail span {
+  color: rgb(255, 153, 0);
+}
+.detail button {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 8px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.detail button:hover {
+  background-color: darkred;
+  transition: 0.3s;
+}
